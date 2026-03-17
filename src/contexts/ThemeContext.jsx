@@ -5,18 +5,23 @@ import { createContext, useContext, useEffect, useState } from "react"
 const ThemeContext = createContext()
 
 export function ThemeProvider({ children }) {
-  const [theme, setTheme] = useState("dark")
-
-  useEffect(() => {
-    const savedTheme = localStorage.getItem("theme")
-    if (savedTheme) {
-      setTheme(savedTheme)
+  const [theme, setTheme] = useState(() => {
+    // Check if we are in the browser and have a saved theme
+    if (typeof window !== "undefined") {
+      const savedTheme = localStorage.getItem("theme")
+      return savedTheme || "dark"
     }
-  }, [])
+    return "dark"
+  })
 
   useEffect(() => {
+    // Only update localStorage and classList when theme actually changes
     localStorage.setItem("theme", theme)
-    document.documentElement.classList.toggle("dark", theme === "dark")
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark")
+    } else {
+      document.documentElement.classList.remove("dark")
+    }
   }, [theme])
 
   const toggleTheme = () => {

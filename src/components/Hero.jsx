@@ -48,8 +48,8 @@ const Hero = () => {
 
   const handleDownloadResume = () => {
     const link = document.createElement("a")
-    link.href = "/CV_final.pdf"
-    link.download = "/CV_final.pdf"
+    link.href = "/CVFINAL.pdf"
+    link.download = "/CVFINAL.pdf"
     link.click()
   }
 
@@ -326,7 +326,7 @@ const Hero = () => {
                   }}
                 >
                   <img
-                    src= "/profile.jpg"
+                    src= "formal4.png"
                     alt="Venkata Ramana - Full Stack Developer"
                     className="w-full object-cover"
                   />

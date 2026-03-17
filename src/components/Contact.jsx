@@ -146,7 +146,7 @@ const Contact = () => {
                           />
                         </svg>
                       ),
-                      href: "#",
+                      href: "https://github.com/Avramana11",
                       color: "hover:text-gray-900",
                     },
                     {
@@ -168,13 +168,15 @@ const Contact = () => {
                           />
                         </svg>
                       ),
-                      href: "#",
+                      href: "https://www.linkedin.com/in/venkata-ramana-994952288/",
                       color: "hover:text-blue-400",
                     },
                   ].map((social, index) => (
                     <a
                       key={index}
                       href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className={`p-3 bg-gray-100 dark:bg-gray-700 rounded-lg text-gray-600 dark:text-gray-300 ${social.color} transition-all duration-300 hover:scale-110 hover:shadow-lg`}
                     >
                       {social.icon}
