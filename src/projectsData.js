@@ -12,7 +12,7 @@ export const projectsData = [
     description: "An interactive learning platform that explains the Top 10 OWASP vulnerabilities using beginner-friendly lessons, vulnerable vs secure code examples, and quizzes to reinforce web security concepts.",
     techStack: ["React-Vite", "Node.js", "Express", "MongoDB", "TailwindCSS"],
     image: "OSWAP.png",
-    liveDemo: "#",
+    liveDemo: "https://top10-oswap.vercel.app/",
     sourceCode: "https://github.com/Avramana11/Top10-OSWAP",
   },
   {
