@@ -30,9 +30,9 @@ const Home = () => (
     <SectionDivider type="curve" variant="purple" flip />
     <Projects />
     <SectionDivider type="zigzag" variant="green" />
-    <Achievements />
-    <SectionDivider type="wave" variant="blue" />
     <Certifications />
+    <SectionDivider type="wave" variant="blue" />
+    <Achievements />
     <SectionDivider type="curve" variant="blue" />
     <Education />
     <SectionDivider type="curve" variant="purple" />
