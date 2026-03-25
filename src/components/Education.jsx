@@ -55,8 +55,8 @@ const Education = () => {
                 </div>
 
                 {/* Card */}
-                <div className={`w-full md:w-[45%] ml-12 md:ml-0 ${
-                  index % 2 === 0 ? "md:pr-10 text-left md:text-right" : "md:pl-10 text-left"
+                <div className={`w-full md:w-[45%] ml-12 md:ml-0 text-left ${
+                  index % 2 === 0 ? "md:pr-10" : "md:pl-10"
                 }`}>
                   <div className="bg-gray-50 dark:bg-gray-800 p-4 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700 group-hover:-translate-y-1">
                     <span className="inline-block px-2 py-0.5 mb-2 text-[10px] font-semibold tracking-wider text-blue-600 uppercase bg-blue-100 rounded-full dark:bg-blue-900/30 dark:text-blue-400">
