@@ -48,8 +48,8 @@ const Hero = () => {
 
   const handleDownloadResume = () => {
     const link = document.createElement("a")
-    link.href = "/CVFINAL.pdf"
-    link.download = "/CVFINAL.pdf"
+    link.href = "/CVFINAL15.pdf"
+    link.download = "/CVFINAL15.pdf"
     link.click()
   }
 
