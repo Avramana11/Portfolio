@@ -326,7 +326,7 @@ const Hero = () => {
                   }}
                 >
                   <img
-                    src= "formal4.png"
+                    src= "forportfolio.jpeg"
                     alt="Venkata Ramana - Full Stack Developer"
                     className="w-full object-cover"
                   />
